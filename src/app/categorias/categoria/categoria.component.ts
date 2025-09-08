@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-categoria',
@@ -7,5 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './categoria.component.scss'
 })
 export class CategoriaComponent {
+
+  camposForm: FormGroup;
+
+  constructor() {
+    this.camposForm = new FormGroup({
+      nome: new FormControl('', Validators.required),
+      descricao: new FormControl('', Validators.required)
+    });
+   }
+
+
+   salvar(){
+    console.log('Valores digitados: ', this.camposForm.value);
+    console.log('Este formulario está valido? ', this.camposForm.valid);
+   }
 
 }
