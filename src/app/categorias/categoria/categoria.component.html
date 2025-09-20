@@ -12,7 +12,9 @@
                    placeholder="Ex: Restaurantes, Praias, Shopping"
                    class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
                    required>
-            <span class="text-red-500 text-sm">Campo obrigatório</span>
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('nome')">
+                Campo obrigatório
+            </span>
         </div>
 
         <div class="mb-4">
@@ -25,7 +27,9 @@
                    class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
                    required>
             </textarea>
-            <span class="text-red-500 text-sm">Campo obrigatório</span>
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('descricao')">
+                Campo obrigatório
+            </span>
         </div>
 
         <button type="submit" class="w-full bg-blue-600 text-white font-semibold p-3 rounded shadow hover:bg-blue-700">
