@@ -1,14 +1,14 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "nome": "Restaurantes",
-            "descricao": "Locais para se alimentar."
-        },
-        {
-            "id": 2,
-            "nome": "Shopping",
-            "descricao": "Locais para compras."
-        }
-    ]
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Restaurantes",
+      "descricao": "Locais para se alimentar."
+    },
+    {
+      "nome": "Shopping Center",
+      "descricao": "Local para compras e passeios.",
+      "id": "8427"
+    }
+  ]
 }
