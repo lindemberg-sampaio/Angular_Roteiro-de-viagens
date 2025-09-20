@@ -6,9 +6,9 @@
       "descricao": "Locais para se alimentar."
     },
     {
+      "id": "2",
       "nome": "Shopping Center",
-      "descricao": "Local para compras e passeios.",
-      "id": "8427"
+      "descricao": "Local para compras e passeios."
     }
   ]
 }
