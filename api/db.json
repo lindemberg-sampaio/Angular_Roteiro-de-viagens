@@ -2,13 +2,72 @@
   "categorias": [
     {
       "id": "1",
-      "nome": "Restaurantes",
+      "nome": "Restaurante",
       "descricao": "Locais para se alimentar."
     },
     {
       "id": "2",
       "nome": "Shopping Center",
       "descricao": "Local para compras e passeios."
+    },
+    {
+      "id": "1f8e",
+      "nome": "Praia",
+      "descricao": "Local para tomar banho de sol e/ou de mar."
+    },
+    {
+      "id": "be88",
+      "nome": "Hotel Fazenda",
+      "descricao": "Estabelecimento hoteleiro instalado em ambiente rural."
+    },
+    {
+      "id": "1428",
+      "nome": "Parque Aquático",
+      "descricao": "Local com atrações que envolvem água, como piscinas, toboáguas, piscinas de ondas e rios artificiais, sendo uma alternativa às praias."
+    },
+    {
+      "id": "ddf0",
+      "nome": "Parque",
+      "descricao": "Local relativamente extenso, cercado e arborizado, destinado à recreação."
+    },
+    {
+      "id": "f9dd",
+      "nome": "Praça",
+      "descricao": "Área pública sem construções, dentro de uma cidade; largo"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "2e78",
+      "nome": "Parque Ibirapuera",
+      "categoria": "Parque",
+      "localizacao": "São Paulo",
+      "urlFoto": "https://jornalzonasul.com.br/wp-content/uploads/2024/11/ibirapuera-1024x562-1.jpg",
+      "avaliacao": "5"
+    },
+    {
+      "id": "9d0c",
+      "nome": "Praça Rui Barbosa",
+      "categoria": "Praça",
+      "localizacao": "Araçatuba",
+      "urlFoto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/87/64/8c/foto-tirada-ao-meio-dia.jpg?w=1200&h=-1&s=1",
+      "avaliacao": "4"
+    },
+    {
+      "id": "346f",
+      "nome": "Thermas dos Laranjais",
+      "categoria": "Parque Aquático",
+      "localizacao": "Olímpia",
+      "urlFoto": "https://resortsdeolimpia.com.br/fotos/167758396863fde66004445742612855.jpg",
+      "avaliacao": "3"
+    },
+    {
+      "id": "e7bb",
+      "nome": "Praia de Taperapuan",
+      "categoria": "Praia",
+      "localizacao": "Porto Seguro/BA",
+      "urlFoto": "https://sueds.com.br/wp-content/uploads/2024/06/beach-club-sueds-praia-taperapuan-porto-seguro-1.webp",
+      "avaliacao": "3"
     }
   ]
 }

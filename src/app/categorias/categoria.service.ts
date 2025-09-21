@@ -16,7 +16,7 @@ export class CategoriaService {
   }
 
 
-  listarTodas() : Observable<Categoria[]>
+  obterTodas() : Observable<Categoria[]>
   {
     return this.http.get<Categoria[]>('http://localhost:3000/categorias');
   }

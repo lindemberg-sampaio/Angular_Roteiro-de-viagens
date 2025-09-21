@@ -28,6 +28,9 @@
                     {{ c.nome }}
                 </option>
             </select>
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('categoria')">
+                Campo obrigatório
+            </span>
         </div>
         <div class="mb-4">
             <label for="localizacao" class="block text-gray-600 font-medium mb-2">Localização</label>
@@ -68,6 +71,9 @@
                     <option value="4">4 - Muito bom</option>
                     <option value="5">5 - Excelente</option>
             </select>
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('avaliacao')">
+                Campo obrigatório
+            </span>
         </div>
 
 
