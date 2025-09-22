@@ -34,6 +34,11 @@
       "id": "f9dd",
       "nome": "Praça",
       "descricao": "Área pública sem construções, dentro de uma cidade; largo"
+    },
+    {
+      "id": "1d12",
+      "nome": "Zoológico",
+      "descricao": "Zoológico"
     }
   ],
   "lugares": [
@@ -41,7 +46,7 @@
       "id": "2e78",
       "nome": "Parque Ibirapuera",
       "categoria": "Parque",
-      "localizacao": "São Paulo",
+      "localizacao": "São Paulo/SP",
       "urlFoto": "https://jornalzonasul.com.br/wp-content/uploads/2024/11/ibirapuera-1024x562-1.jpg",
       "avaliacao": "5"
     },
@@ -49,7 +54,7 @@
       "id": "9d0c",
       "nome": "Praça Rui Barbosa",
       "categoria": "Praça",
-      "localizacao": "Araçatuba",
+      "localizacao": "Araçatuba/SP",
       "urlFoto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/87/64/8c/foto-tirada-ao-meio-dia.jpg?w=1200&h=-1&s=1",
       "avaliacao": "4"
     },
@@ -57,7 +62,7 @@
       "id": "346f",
       "nome": "Thermas dos Laranjais",
       "categoria": "Parque Aquático",
-      "localizacao": "Olímpia",
+      "localizacao": "Olímpia/SP",
       "urlFoto": "https://resortsdeolimpia.com.br/fotos/167758396863fde66004445742612855.jpg",
       "avaliacao": "3"
     },
@@ -68,6 +73,14 @@
       "localizacao": "Porto Seguro/BA",
       "urlFoto": "https://sueds.com.br/wp-content/uploads/2024/06/beach-club-sueds-praia-taperapuan-porto-seguro-1.webp",
       "avaliacao": "3"
+    },
+    {
+      "id": "950c",
+      "nome": "Zoológico de São Paulo",
+      "categoria": "Zoológico",
+      "localizacao": "São Paulo/SP",
+      "urlFoto": "https://ipiranganews.inf.br/wp-content/uploads/Zo0ol%C3%B3gico.jpg",
+      "avaliacao": "5"
     }
   ]
 }

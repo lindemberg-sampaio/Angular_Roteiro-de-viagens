@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { CategoriasRoutingModule } from './categorias-routing.module';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { CategoriaService } from './categoria.service';
 
 
 @NgModule({
