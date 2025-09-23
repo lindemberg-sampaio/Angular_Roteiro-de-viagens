@@ -24,7 +24,9 @@ export class LugarService {
     let parametros = new HttpParams();
 
     if (nome) {
-      parametros = parametros.set('nome_like', nome);
+      parametros = parametros.set('nome_like', nome); 
+      /*  a busca com like funciona com o json-server na versão 0.17.4.
+      npm install --save-dev json-server@0.17.4 */
     }
     
 
