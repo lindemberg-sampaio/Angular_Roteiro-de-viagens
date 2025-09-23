@@ -1,15 +1,29 @@
 <!-- Filtros -->
-<div class="p-4 bg-white shadow">
-    <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-        <input type="text"
-               placeholder="Pesquisar pelo nome do local"
-               class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus:ring-blue-400">
-        <select class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus:ring-blue-400">
-            <option value="">Todas as categorias</option>
-            <option *ngFor="let c of categoriasFiltro" value="c.nome">{{ c.nome }}</option>
-        </select>
+ <form #frm="ngForm">
+    <div class="p-4 bg-white shadow">
+        
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+
+            <input type="text"
+                name="nomeFiltroForm"
+                [(ngModel)]="nomeFiltroForm"
+                placeholder="Pesquisar pelo nome do local"
+                class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus:ring-blue-400">
+            
+            <select
+                name="categoriaFiltroForm"
+                [(ngModel)]="categoriaFiltroForm"
+                class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus:ring-blue-400">
+                <option value="">Todas as categorias</option>
+                <option *ngFor="let c of categoriasFiltro" (value)="c.nome">{{ c.nome }}</option>
+            </select>
+
+            <button (click)="filtrar()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800">
+                Pesquisar
+            </button>
+        </div>
     </div>
-</div>
+</form>
 
 <!-- Listagem -->
 <div id="lugaresList" class="p-4 grid grid-col-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -15,6 +15,9 @@ export class GaleriaComponent implements OnInit {
   lugares: Lugar[] = [];
   categoriasFiltro : Categoria[] = [];
 
+  nomeFiltroForm: string = '';
+  categoriaFiltroForm: string = '';
+
   constructor(
       private lugarService: LugarService,
       private categoriaService: CategoriaService
@@ -31,6 +34,15 @@ export class GaleriaComponent implements OnInit {
 
   getTotalEstrelas(lugar: Lugar) : string {
     return '&#9733;'.repeat(lugar.avaliacao || 0) + '&#9734;'.repeat(5 - (lugar.avaliacao || 0));
+  }
+
+
+  filtrar(){
+
+    console.log('Valores digitados: ', this.nomeFiltroForm, this.categoriaFiltroForm);
+
+    this.lugarService.filtrar(this.nomeFiltroForm, this.categoriaFiltroForm)
+                     .subscribe(resultado => this.lugares = resultado);
   }
 
 }
